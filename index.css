@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f1cfe4;
+}
+header{
+    background-color: rgb(245, 28, 162);
+    padding: 16px 120px;
+    display: flex;
+    align-items:center;
+}
+header box-icon{
+    background-color: white;
+    margin-right: 10px;
+   
+}
+header input{
+    width:100%;
+    height: 60px;
+    padding: 0 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#tarefas{
+    padding: 60px 120px;
+}
+
+#tarefas h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 48px;
+    color:rgb(245, 28, 162);;
+    border-radius: 2px 0px 0px 0px;
+    border-radius: 2px;
+}
+#tarefas h2 button{
+    height: 46px;
+    background-color: rgb(245, 28, 162);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+    padding: 0 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+#tarefas h2 button:hover{
+    background-color:rgb(151, 0, 101) ;
+}
+#tarefas h6{
+    text-align: center;
+    font-size: 24px;
+    color: #999;
+}
+#tarefas ul{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 16px;
+    margin-top: 36px;
+}
+#tarefas ul li{
+    width: calc(25% - 12px);
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px #00000015 ;
+    display: initial;
+}
+#tarefas ul li.oculto{
+    display:none;
+} 
+#tarefas ul li h5{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+#tarefas ul li .actions{
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 16px;
+    cursor: pointer;
+    fill:#999;
+}
+#tarefas ul li .actions box-icon:hover{
+    fill: rgb(245, 28, 162);
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+#overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    width: 400px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+.modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal form h3{
+    font-size:  24px;
+    color:#999;
+    margin-bottom: 26px;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal form h3 box-icon{
+    fill: #999;
+    cursor: pointer ;
+}
+.modal form h3 box-icon:hover{
+    fill: rgb(245, 28, 162);
+}
+.modal form label{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.modal form input,
+.modal form textarea{
+    width: 100%;
+    height: 46px;
+    border: 2px solid #DEDEDE;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    transition-duration: 200ms;
+}
+.modal form input:focus,
+.modal form textarea:focus{
+    border-color: rgb(245, 28, 162);
+}
+.modal form textarea{
+    padding-top: 10px;
+    height: 120px;
+}
+.modal form button{
+    width: 100%;
+    height: 46px;
+    background-color: rgb(245, 28, 162);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+    padding: 0 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+.modal form button:hover{
+    background-color:rgb(151, 0, 101) ;
+}

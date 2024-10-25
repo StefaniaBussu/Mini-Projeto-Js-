@@ -1,0 +1,34 @@
+{
+  "tarefas": [
+    {
+      "titulo": "Tarefa 1",
+      "descricao": "Estudar",
+      "id": 2
+    },
+    {
+      "titulo": "Tarefa 2 ",
+      "descricao": "Fazer atividades",
+      "id": 3
+    },
+    {
+      "titulo": "Tarefa 3",
+      "descricao": "Trabalho ",
+      "id": 4
+    },
+    {
+      "titulo": "Tarefa 4",
+      "descricao": "Pagar contas ao chegar em casa",
+      "id": 5
+    },
+    {
+      "titulo": "Tarefa 5 ",
+      "descricao": "Limpar casa\n- lavar louças\n- guardar compras\n- fazer janta\n- organizar a área  \n- colocar os lixos\n",
+      "id": 6
+    },
+    {
+      "titulo": "Tarefa 6",
+      "descricao": "Organizar as coisas do trabalho e guardar comida",
+      "id": 7
+    }
+  ]
+}
